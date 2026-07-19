@@ -1,0 +1,31 @@
+"Navegador
+     │
+     ▼
+server.js
+     │
+     ▼
+app.js
+     │
+     ▼
+routes.js
+     │
+     ▼
+controller.js
+     │
+     ▼
+database.js (Pool)
+     │
+     ▼
+PostgreSQL
+     │
+     ▼
+database.js
+     │
+     ▼
+controller.js
+     │
+     ▼
+Express
+     │
+     ▼
+Navegador (JSON)"

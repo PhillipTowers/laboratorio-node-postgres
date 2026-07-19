@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: .
+    container_name: laboratorio-node
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: npm run dev
+
+  postgres:
+    image: postgres:17
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: laboratorio
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
